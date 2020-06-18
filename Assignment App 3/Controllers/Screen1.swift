@@ -11,7 +11,7 @@ import UIKit
 class Screen1: UIViewController {
 	
 	private let tableView = UITableView()
-	private var jsonDecoder = JSONDecoder()
+	private var jsonDecoder = DecodeJASON()
 	var transferredPeople: [PersonModel]? // Copy of the PeopleFromJSON, to keep old changes when I update Screen1
 	var transferredPerson: PersonModel?  // The person I updated in Screen 2
 	

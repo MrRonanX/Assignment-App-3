@@ -13,7 +13,7 @@ protocol NetworkManagerDelegate {
 	func didFailWithError(error: Error)
 }
 
-struct JSONDecoder {
+struct DecodeJASON {
 
 	var delegate: NetworkManagerDelegate?
 	
@@ -22,7 +22,6 @@ struct JSONDecoder {
 		if let path = Bundle.main.path(forResource: "data", ofType: "json") {
 			do {
 				let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
-				//let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
 				
 				let decodedData = try decoder.decode([PersonData].self, from: data)
 				var people = [PersonModel]()

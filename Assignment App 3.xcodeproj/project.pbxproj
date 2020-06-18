@@ -9,21 +9,39 @@
 /* Begin PBXBuildFile section */
 		F9C7CE76249A2C3C005A0E64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C7CE75249A2C3C005A0E64 /* AppDelegate.swift */; };
 		F9C7CE78249A2C3C005A0E64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C7CE77249A2C3C005A0E64 /* SceneDelegate.swift */; };
-		F9C7CE7A249A2C3C005A0E64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C7CE79249A2C3C005A0E64 /* ViewController.swift */; };
+		F9C7CE7A249A2C3C005A0E64 /* Screen1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C7CE79249A2C3C005A0E64 /* Screen1.swift */; };
 		F9C7CE7D249A2C3C005A0E64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9C7CE7B249A2C3C005A0E64 /* Main.storyboard */; };
 		F9C7CE7F249A2C3D005A0E64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9C7CE7E249A2C3D005A0E64 /* Assets.xcassets */; };
 		F9C7CE82249A2C3D005A0E64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9C7CE80249A2C3D005A0E64 /* LaunchScreen.storyboard */; };
+		F9C7CE8A249A2CFC005A0E64 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C7CE89249A2CFC005A0E64 /* TableViewCell.swift */; };
+		F9C7CE8C249A2E4A005A0E64 /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C7CE8B249A2E4A005A0E64 /* PersonModel.swift */; };
+		F9C7CE8E249A2EAF005A0E64 /* PersonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C7CE8D249A2EAF005A0E64 /* PersonData.swift */; };
+		F9C7CE90249A2F04005A0E64 /* JSONDEcoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C7CE8F249A2F04005A0E64 /* JSONDEcoder.swift */; };
+		F9C7CE92249A3059005A0E64 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = F9C7CE91249A3059005A0E64 /* data.json */; };
+		F9C7CE94249AE39B005A0E64 /* Screen2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C7CE93249AE39B005A0E64 /* Screen2.swift */; };
+		F9C7CE96249AE578005A0E64 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C7CE95249AE578005A0E64 /* CustomTextField.swift */; };
+		F9C7CE9B249B26C3005A0E64 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C7CE9A249B26C3005A0E64 /* CustomButton.swift */; };
+		F9C7CE9D249B52ED005A0E64 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C7CE9C249B52ED005A0E64 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F9C7CE72249A2C3C005A0E64 /* Assignment App 3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Assignment App 3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9C7CE75249A2C3C005A0E64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9C7CE77249A2C3C005A0E64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F9C7CE79249A2C3C005A0E64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F9C7CE79249A2C3C005A0E64 /* Screen1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen1.swift; sourceTree = "<group>"; };
 		F9C7CE7C249A2C3C005A0E64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F9C7CE7E249A2C3D005A0E64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9C7CE81249A2C3D005A0E64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F9C7CE83249A2C3D005A0E64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9C7CE89249A2CFC005A0E64 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		F9C7CE8B249A2E4A005A0E64 /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
+		F9C7CE8D249A2EAF005A0E64 /* PersonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonData.swift; sourceTree = "<group>"; };
+		F9C7CE8F249A2F04005A0E64 /* JSONDEcoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDEcoder.swift; sourceTree = "<group>"; };
+		F9C7CE91249A3059005A0E64 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		F9C7CE93249AE39B005A0E64 /* Screen2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen2.swift; sourceTree = "<group>"; };
+		F9C7CE95249AE578005A0E64 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		F9C7CE9A249B26C3005A0E64 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		F9C7CE9C249B52ED005A0E64 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +76,46 @@
 			children = (
 				F9C7CE75249A2C3C005A0E64 /* AppDelegate.swift */,
 				F9C7CE77249A2C3C005A0E64 /* SceneDelegate.swift */,
-				F9C7CE79249A2C3C005A0E64 /* ViewController.swift */,
-				F9C7CE7B249A2C3C005A0E64 /* Main.storyboard */,
+				F9C7CE99249B2266005A0E64 /* Model */,
+				F9C7CE98249B2259005A0E64 /* Views */,
+				F9C7CE97249B221B005A0E64 /* Controllers */,
 				F9C7CE7E249A2C3D005A0E64 /* Assets.xcassets */,
 				F9C7CE80249A2C3D005A0E64 /* LaunchScreen.storyboard */,
 				F9C7CE83249A2C3D005A0E64 /* Info.plist */,
+				F9C7CE91249A3059005A0E64 /* data.json */,
+				F9C7CE95249AE578005A0E64 /* CustomTextField.swift */,
+				F9C7CE9A249B26C3005A0E64 /* CustomButton.swift */,
+				F9C7CE9C249B52ED005A0E64 /* Extensions.swift */,
 			);
 			path = "Assignment App 3";
+			sourceTree = "<group>";
+		};
+		F9C7CE97249B221B005A0E64 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F9C7CE79249A2C3C005A0E64 /* Screen1.swift */,
+				F9C7CE93249AE39B005A0E64 /* Screen2.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F9C7CE98249B2259005A0E64 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F9C7CE7B249A2C3C005A0E64 /* Main.storyboard */,
+				F9C7CE89249A2CFC005A0E64 /* TableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F9C7CE99249B2266005A0E64 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F9C7CE8B249A2E4A005A0E64 /* PersonModel.swift */,
+				F9C7CE8D249A2EAF005A0E64 /* PersonData.swift */,
+				F9C7CE8F249A2F04005A0E64 /* JSONDEcoder.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +179,7 @@
 				F9C7CE82249A2C3D005A0E64 /* LaunchScreen.storyboard in Resources */,
 				F9C7CE7F249A2C3D005A0E64 /* Assets.xcassets in Resources */,
 				F9C7CE7D249A2C3C005A0E64 /* Main.storyboard in Resources */,
+				F9C7CE92249A3059005A0E64 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +190,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9C7CE7A249A2C3C005A0E64 /* ViewController.swift in Sources */,
+				F9C7CE8E249A2EAF005A0E64 /* PersonData.swift in Sources */,
+				F9C7CE7A249A2C3C005A0E64 /* Screen1.swift in Sources */,
+				F9C7CE94249AE39B005A0E64 /* Screen2.swift in Sources */,
+				F9C7CE8A249A2CFC005A0E64 /* TableViewCell.swift in Sources */,
+				F9C7CE9B249B26C3005A0E64 /* CustomButton.swift in Sources */,
+				F9C7CE90249A2F04005A0E64 /* JSONDEcoder.swift in Sources */,
+				F9C7CE8C249A2E4A005A0E64 /* PersonModel.swift in Sources */,
 				F9C7CE76249A2C3C005A0E64 /* AppDelegate.swift in Sources */,
 				F9C7CE78249A2C3C005A0E64 /* SceneDelegate.swift in Sources */,
+				F9C7CE9D249B52ED005A0E64 /* Extensions.swift in Sources */,
+				F9C7CE96249AE578005A0E64 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

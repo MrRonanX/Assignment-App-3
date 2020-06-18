@@ -16,7 +16,7 @@
 		F9C7CE8A249A2CFC005A0E64 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C7CE89249A2CFC005A0E64 /* TableViewCell.swift */; };
 		F9C7CE8C249A2E4A005A0E64 /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C7CE8B249A2E4A005A0E64 /* PersonModel.swift */; };
 		F9C7CE8E249A2EAF005A0E64 /* PersonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C7CE8D249A2EAF005A0E64 /* PersonData.swift */; };
-		F9C7CE90249A2F04005A0E64 /* JSONDEcoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C7CE8F249A2F04005A0E64 /* JSONDEcoder.swift */; };
+		F9C7CE90249A2F04005A0E64 /* JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C7CE8F249A2F04005A0E64 /* JSONDecoder.swift */; };
 		F9C7CE92249A3059005A0E64 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = F9C7CE91249A3059005A0E64 /* data.json */; };
 		F9C7CE94249AE39B005A0E64 /* Screen2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C7CE93249AE39B005A0E64 /* Screen2.swift */; };
 		F9C7CE96249AE578005A0E64 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C7CE95249AE578005A0E64 /* CustomTextField.swift */; };
@@ -36,7 +36,7 @@
 		F9C7CE89249A2CFC005A0E64 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		F9C7CE8B249A2E4A005A0E64 /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
 		F9C7CE8D249A2EAF005A0E64 /* PersonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonData.swift; sourceTree = "<group>"; };
-		F9C7CE8F249A2F04005A0E64 /* JSONDEcoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDEcoder.swift; sourceTree = "<group>"; };
+		F9C7CE8F249A2F04005A0E64 /* JSONDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDecoder.swift; sourceTree = "<group>"; };
 		F9C7CE91249A3059005A0E64 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		F9C7CE93249AE39B005A0E64 /* Screen2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen2.swift; sourceTree = "<group>"; };
 		F9C7CE95249AE578005A0E64 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
@@ -113,7 +113,7 @@
 			children = (
 				F9C7CE8B249A2E4A005A0E64 /* PersonModel.swift */,
 				F9C7CE8D249A2EAF005A0E64 /* PersonData.swift */,
-				F9C7CE8F249A2F04005A0E64 /* JSONDEcoder.swift */,
+				F9C7CE8F249A2F04005A0E64 /* JSONDecoder.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -195,7 +195,7 @@
 				F9C7CE94249AE39B005A0E64 /* Screen2.swift in Sources */,
 				F9C7CE8A249A2CFC005A0E64 /* TableViewCell.swift in Sources */,
 				F9C7CE9B249B26C3005A0E64 /* CustomButton.swift in Sources */,
-				F9C7CE90249A2F04005A0E64 /* JSONDEcoder.swift in Sources */,
+				F9C7CE90249A2F04005A0E64 /* JSONDecoder.swift in Sources */,
 				F9C7CE8C249A2E4A005A0E64 /* PersonModel.swift in Sources */,
 				F9C7CE76249A2C3C005A0E64 /* AppDelegate.swift in Sources */,
 				F9C7CE78249A2C3C005A0E64 /* SceneDelegate.swift in Sources */,

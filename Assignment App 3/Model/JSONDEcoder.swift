@@ -13,7 +13,7 @@ protocol NetworkManagerDelegate {
 	func didFailWithError(error: Error)
 }
 
-struct JSONDEcoder {
+struct JSONDecoder {
 
 	var delegate: NetworkManagerDelegate?
 	

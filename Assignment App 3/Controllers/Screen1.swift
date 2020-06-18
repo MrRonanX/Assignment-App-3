@@ -11,13 +11,13 @@ import UIKit
 class Screen1: UIViewController {
 	
 	private let tableView = UITableView()
-	private var jsonDecoder = JSONDEcoder()
-	var transferredPerson: PersonModel?
-	var transferredPeople: [PersonModel]?
+	private var jsonDecoder = JSONDecoder()
+	var transferredPeople: [PersonModel]? // Copy of the PeopleFromJSON, to keep old changes when I update Screen1
+	var transferredPerson: PersonModel?  // The person I updated in Screen 2
 	
 	private var peopleFromJSON = [PersonModel]()
 	var shouldReset = true
-	var indexPath: Int?
+	var index: Int?  // Person's position in the PeopleFromJSON array
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -36,9 +36,9 @@ class Screen1: UIViewController {
 	}
 	
 	private func updateData() {
-		if let person = transferredPerson, let index = indexPath, let transferredPeople = transferredPeople {
-			peopleFromJSON = transferredPeople
-			peopleFromJSON[index] = person
+		if let person = transferredPerson, let index = index, let transferredPeople = transferredPeople {
+			peopleFromJSON = transferredPeople  // Fill the array with previous DATA to be source for TableView
+			peopleFromJSON[index] = person  // Change the person in the array with updated version
 			shouldReset = true
 			tableView.reloadData()
 		}
@@ -81,7 +81,7 @@ extension Screen1: UITableViewDelegate {
 			destinationVC.setName = peopleFromJSON[indexPath.row].name
 			destinationVC.setEmail = peopleFromJSON[indexPath.row].email
 			destinationVC.setPhone = peopleFromJSON[indexPath.row].phone
-			destinationVC.indexPath = indexPath.row
+			destinationVC.indexPath = indexPath.row  // position in the Array == position in the TableView (IndexPath.row)
 			destinationVC.transferredPeople = peopleFromJSON
 		}
 	}

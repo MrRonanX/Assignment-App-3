@@ -154,7 +154,7 @@ class Screen2: UIViewController {
 		super.viewDidLoad()
 		setupView()
 		updateButton.backgroundColor = buttonColor.lighter(by: 10)
-		initialValidation()
+		initialValidation()  // check is initial data is valid
 	}
 	
 	private func setupView() {
@@ -273,6 +273,8 @@ class Screen2: UIViewController {
 	}
 	
 	private func checkIsTextFieldAreValid() {
+		// if Valid -> changes Button Color
+		
 		if phoneIsValid, nameIsValid, emailIsValid {
 			updateButton.backgroundColor = buttonColor
 		}
@@ -287,7 +289,10 @@ class Screen2: UIViewController {
 	}
 	
 	@objc private func validation(_ sender: CustomTextField) {
+		//text Validation
+		
 		guard let text = sender.text else { return }
+		
 		switch sender.placeholder! {
 		case Placeholder.name.rawValue:
 			validityType = .name
@@ -327,7 +332,7 @@ class Screen2: UIViewController {
 		if segue.identifier == "Screen2ToScreen1" {
 			let destinationVC = segue.destination as! Screen1
 			destinationVC.transferredPerson = person
-			destinationVC.indexPath = indexPath
+			destinationVC.index = indexPath
 			destinationVC.shouldReset = false
 			destinationVC.transferredPeople = transferredPeople
 		}

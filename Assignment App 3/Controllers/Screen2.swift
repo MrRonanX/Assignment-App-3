@@ -326,22 +326,17 @@ class Screen2: UIViewController {
 		}
 	}
 	
-	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-		let person = PersonModel(name: name.text!, email: email.text!, phone: phone.text!)
-		
-		if segue.identifier == "Screen2ToScreen1" {
-			let destinationVC = segue.destination as! Screen1
-			destinationVC.transferredPerson = person
-			destinationVC.index = indexPath
-			destinationVC.shouldReset = false
-			destinationVC.transferredPeople = transferredPeople
-		}
-	}
 	
 	@objc private func updateButtonPressed(_ sender: UIButton) {
 		if nameIsValid, emailIsValid, phoneIsValid {
-			
-			performSegue(withIdentifier: "Screen2ToScreen1", sender: nil)
+			let person = PersonModel(name: name.text!, email: email.text!, phone: phone.text!)
+			if let rootVC = navigationController?.viewControllers.first as? Screen1 {
+				rootVC.transferredPerson = person
+				rootVC.index = indexPath
+				rootVC.shouldReset = false
+				rootVC.transferredPeople = transferredPeople
+			}
+			navigationController?.popToRootViewController(animated: true)
 			
 		} else {
 			if !nameIsValid { nameNotValid() }

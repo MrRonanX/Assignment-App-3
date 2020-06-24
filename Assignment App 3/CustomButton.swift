@@ -30,6 +30,7 @@ class CustomButton: UIButton {
 		layer.cornerRadius 	= 12
 		layer.borderWidth 	= 3.0
 		layer.borderColor 	= UIColor.darkGray.cgColor
+		translatesAutoresizingMaskIntoConstraints = false
 	}
 	
 	private func setShadow() {

@@ -12,15 +12,12 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="Screen1" customModule="Assignment_App_3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="VGb-cB-WjY"/>
-                    <connections>
-                        <segue destination="zlf-Vm-dGK" kind="show" identifier="ToScreen2" id="IVK-xD-3N8"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -31,15 +28,12 @@
             <objects>
                 <viewController id="zlf-Vm-dGK" customClass="Screen2" customModule="Assignment_App_3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9gg-dA-9X0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="XLo-md-L1Y"/>
                     </view>
                     <navigationItem key="navigationItem" id="Xkm-Tp-Zrz"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="Screen2ToScreen1" id="mdO-Kz-5an"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I8t-jo-vWh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -64,7 +58,4 @@
             <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="mdO-Kz-5an"/>
-    </inferredMetricsTieBreakers>
 </document>

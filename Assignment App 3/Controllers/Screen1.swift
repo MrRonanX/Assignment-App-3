@@ -19,8 +19,12 @@ class Screen1: UIViewController {
 	var shouldReset = true
 	var index: Int?  // Person's position in the PeopleFromJSON array
 	
+	
+	let screen2 = Screen2()
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		screen2.delegate = self
 		setupTableView()
 	}
 	
@@ -68,22 +72,16 @@ class Screen1: UIViewController {
 extension Screen1: UITableViewDelegate {
 	
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		screen2.setName = peopleFromJSON[indexPath.row].name
+		screen2.setEmail = peopleFromJSON[indexPath.row].email
+		screen2.setPhone = peopleFromJSON[indexPath.row].phone
+		screen2.indexPath = indexPath.row
+		screen2.transferredPeople = peopleFromJSON
 		
-		performSegue(withIdentifier: "ToScreen2", sender: self)
+		navigationController?.pushViewController(screen2, animated: true)
 		tableView.deselectRow(at: indexPath, animated: false)
 		
 		
-	}
-	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-		
-		if segue.identifier == "ToScreen2", let indexPath = tableView.indexPathForSelectedRow {
-			let destinationVC = segue.destination as! Screen2
-			destinationVC.setName = peopleFromJSON[indexPath.row].name
-			destinationVC.setEmail = peopleFromJSON[indexPath.row].email
-			destinationVC.setPhone = peopleFromJSON[indexPath.row].phone
-			destinationVC.indexPath = indexPath.row  // position in the Array == position in the TableView (IndexPath.row)
-			destinationVC.transferredPeople = peopleFromJSON
-		}
 	}
 	
 }
@@ -120,6 +118,16 @@ extension Screen1: NetworkManagerDelegate {
 			alert.addAction(action)
 			self.present(alert, animated: true)
 		}
+	}
+}
+
+extension Screen1: PassData {
+	func passData(person: PersonModel, index: Int?, shouldReset: Bool, people: [PersonModel]?) {
+		transferredPerson = person
+		transferredPeople = people
+		self.index = index
+		self.shouldReset = shouldReset
+		
 	}
 	
 	

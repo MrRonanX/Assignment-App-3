@@ -26,6 +26,6 @@ class CustomTextField: UITextField {
         borderStyle 				= .roundedRect
 		textAlignment 				= .left
         contentVerticalAlignment 	= .center
-		
+		translatesAutoresizingMaskIntoConstraints = false
 	}
 }

@@ -20,11 +20,10 @@ class Screen1: UIViewController {
 	var index: Int?  // Person's position in the PeopleFromJSON array
 	
 	
-	let screen2 = Screen2()
+	
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		screen2.delegate = self
 		setupTableView()
 	}
 	
@@ -72,6 +71,8 @@ class Screen1: UIViewController {
 extension Screen1: UITableViewDelegate {
 	
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		let screen2 = Screen2()
+		screen2.delegate = self
 		screen2.setName = peopleFromJSON[indexPath.row].name
 		screen2.setEmail = peopleFromJSON[indexPath.row].email
 		screen2.setPhone = peopleFromJSON[indexPath.row].phone

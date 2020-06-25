@@ -28,6 +28,7 @@ class Screen1: UIViewController {
 	}
 	
 	override func viewWillAppear(_ animated: Bool) {
+		print("viwWillAppear Called")
 		navigationController?.isNavigationBarHidden = true
 		jsonDecoder.delegate = self
 		shouldReset == true ? jsonDecoder.parseJSON() : updateData()
@@ -38,11 +39,12 @@ class Screen1: UIViewController {
 		navigationController?.isNavigationBarHidden = false
 	}
 	
+	
 	private func updateData() {
 		if let person = transferredPerson, let index = index, let transferredPeople = transferredPeople {
 			peopleFromJSON = transferredPeople  // Fill the array with previous DATA to be source for TableView
 			peopleFromJSON[index] = person  // Change the person in the array with updated version
-			shouldReset = true
+			//shouldReset = true
 			tableView.reloadData()
 		}
 	}
@@ -123,6 +125,10 @@ extension Screen1: NetworkManagerDelegate {
 }
 
 extension Screen1: PassData {
+	func backButtonPressed(shouldReset: Bool) {
+		self.shouldReset = shouldReset
+	}
+	
 	func passData(person: PersonModel, index: Int?, shouldReset: Bool, people: [PersonModel]?) {
 		transferredPerson = person
 		transferredPeople = people

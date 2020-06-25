@@ -10,6 +10,8 @@ import UIKit
 
 protocol PassData {
 	func passData(person: PersonModel, index: Int?, shouldReset: Bool, people: [PersonModel]?)
+	
+	func backButtonPressed(shouldReset: Bool)
 }
 
 class Screen2: UIViewController {
@@ -90,6 +92,12 @@ class Screen2: UIViewController {
 		updateButton.backgroundColor = buttonColor.lighter(by: 10)
 		initialValidation()  // check is initial data is valid
 	}
+	
+//	override func didMove(toParent parent: UIViewController?) {
+//		print((parent as? Screen1)?.shouldReset)
+//		print("parent")
+//	}
+	
 	
 
 	
@@ -190,7 +198,7 @@ class Screen2: UIViewController {
 	
 	
 	@objc private func resetButtonPressed (_ sender: UIButton) {
-		
+		delegate?.backButtonPressed(shouldReset: true)
 		navigationController?.popViewController(animated: true)
 		
 	}
